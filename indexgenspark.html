@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socialógica - Google My Business para Brasileiros nos EUA</title>
+    <link rel="icon" type="image/jpeg" href="Favicon.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .socialogica-green {
+            color: #9ACD32;
+        }
+        
+        .bg-socialogica-green {
+            background-color: #9ACD32;
+        }
+        
+        .text-socialogica-gray {
+            color: #6B7280;
+        }
+        
+        .bolinhas-decorativas {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            opacity: 0.1;
+            z-index: 0;
+        }
+        
+        .bolinhas-brancas {
+            background: radial-gradient(circle, rgba(255,255,255,0.8) 20%, transparent 20%);
+            background-size: 20px 20px;
+        }
+        
+        .bolinhas-verdes {
+            background: radial-gradient(circle, rgba(154,205,50,0.3) 20%, transparent 20%);
+            background-size: 15px 15px;
+        }
+        
+        .bolinhas-cinzas {
+            background: radial-gradient(circle, rgba(107,114,128,0.2) 20%, transparent 20%);
+            background-size: 18px 18px;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            z-index: 1000;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .floating-whatsapp:hover {
+            transform: scale(1.1);
+        }
+        
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent 0%, #9ACD32 50%, transparent 100%);
+            margin: 60px auto;
+            width: 100px;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #9ACD32 0%, #7CB342 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/5521999999999?text=Olá! Gostaria de saber mais sobre os serviços de Google My Business para brasileiros nos EUA" 
+       class="floating-whatsapp" target="_blank">
+        <img src="ZAP-SOCIALOGICA.png" alt="WhatsApp Socialógica" class="w-full h-full object-contain">
+    </a>
+
+    <!-- Hero Section -->
+    <section class="hero-section min-h-screen flex items-center justify-center px-4 py-20">
+        <!-- Decorative Elements -->
+        <div class="bolinhas-decorativas bolinhas-brancas top-10 left-10"></div>
+        <div class="bolinhas-decorativas bolinhas-verdes top-40 right-20"></div>
+        <div class="bolinhas-decorativas bolinhas-cinzas bottom-20 left-1/4"></div>
+        
+        <div class="container mx-auto text-center relative z-10">
+            <div class="mb-8">
+                <img src="Logo-Socialogica.png" alt="Socialógica" class="mx-auto h-16 md:h-20 mb-8">
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                Seu negócio <span class="gradient-text">invisível</span><br>
+                para brasileiros nos EUA?
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
+                Enquanto você trabalha duro no seu restaurante, salão ou pet shop, seus compatriotas estão procurando seus serviços no Google e <strong class="socialogica-green">não te encontram</strong>.
+            </p>
+            
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center mb-12">
+                <a href="#solucao" class="bg-socialogica-green text-black px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-400 transition-all duration-300 pulse-animation">
+                    <i class="fas fa-rocket mr-2"></i>
+                    Quero Aparecer no Google Maps
+                </a>
+                <a href="#como-funciona" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-gray-800 transition-all duration-300">
+                    <i class="fas fa-play mr-2"></i>
+                    Como Funciona?
+                </a>
+            </div>
+            
+            <div class="text-sm text-gray-400">
+                <p><i class="fas fa-map-marker-alt mr-2"></i>Especialistas em Flórida, New Jersey, New York e Texas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="py-20 bg-gray-50 relative">
+        <div class="bolinhas-decorativas bolinhas-cinzas top-0 right-0"></div>
+        
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+                    A dura realidade dos empreendedores brasileiros nos EUA
+                </h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white p-8 rounded-lg shadow-lg card-hover text-center">
+                    <div class="text-red-500 text-5xl mb-4">
+                        <i class="fas fa-eye-slash"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Invisível no Google</h3>
+                    <p class="text-gray-600">Seu negócio não aparece quando brasileiros buscam por restaurantes, salões ou serviços na sua região.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg card-hover text-center">
+                    <div class="text-red-500 text-5xl mb-4">
+                        <i class="fas fa-users-slash"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Clientes Perdidos</h3>
+                    <p class="text-gray-600">Compatriotas que moram perto de você estão indo para a concorrência porque não sabem que você existe.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg card-hover text-center">
+                    <div class="text-red-500 text-5xl mb-4">
+                        <i class="fas fa-chart-line-down"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Vendas em Queda</h3>
+                    <p class="text-gray-600">Sem presença digital estratégica, você depende apenas do boca a boca e perde oportunidades diariamente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solucao" class="py-20 bg-white relative">
+        <div class="bolinhas-decorativas bolinhas-verdes top-10 left-10"></div>
+        <div class="bolinhas-decorativas bolinhas-brancas bottom-10 right-10"></div>
+        
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+                    <span class="socialogica-green">Google My Business:</span> A solução que você precisava
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Transformamos seu negócio em referência local para a comunidade brasileira nos Estados Unidos
+                </p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+                <div>
+                    <div class="space-y-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-socialogica-green rounded-full p-3 flex-shrink-0">
+                                <i class="fas fa-map-marked-alt text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-semibold text-gray-800 mb-2">Apareça no Mapa Local</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Quando configurado corretamente, seu perfil aparece no "pacote local" - os 3 primeiros resultados do Google Maps. Isso aumenta drasticamente suas chances de conversão e traz clientes diretamente para sua porta.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-socialogica-green rounded-full p-3 flex-shrink-0">
+                                <i class="fas fa-star text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-semibold text-gray-800 mb-2">Avaliações que Convencem</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    O brasileiro valoriza recomendações, principalmente fora do país. Criamos um processo para solicitar feedbacks de clientes satisfeitos. Avaliações 5 estrelas em português e inglês elevam sua autoridade no Google.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-socialogica-green rounded-full p-3 flex-shrink-0">
+                                <i class="fas fa-chart-network text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-semibold text-gray-800 mb-2">Marketing Integrado</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    O Google My Business integrado às demais estratégias de marketing. SEO local, conteúdo em redes sociais e tráfego pago ampliam exponencialmente os resultados do seu negócio.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-100 p-8 rounded-2xl">
+                    <div class="text-center mb-8">
+                        <h4 class="text-2xl font-bold text-gray-800 mb-4">Resultado Garantido em 30 Dias</h4>
+                        <div class="bg-socialogica-green text-black px-6 py-2 rounded-full font-semibold inline-block">
+                            Aumento de 300% na visibilidade local
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle socialogica-green text-xl"></i>
+                            <span class="text-gray-700">Perfil completo e otimizado</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle socialogica-green text-xl"></i>
+                            <span class="text-gray-700">Fotos profissionais do seu negócio</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle socialogica-green text-xl"></i>
+                            <span class="text-gray-700">Gestão completa de avaliações</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle socialogica-green text-xl"></i>
+                            <span class="text-gray-700">Posts regulares e estratégicos</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle socialogica-green text-xl"></i>
+                            <span class="text-gray-700">Relatórios mensais detalhados</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 text-center">
+                        <a href="https://wa.me/5521999999999?text=Quero%20saber%20mais%20sobre%20o%20Google%20My%20Business%20para%20meu%20negócio%20nos%20EUA" 
+                           class="bg-socialogica-green text-black px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-400 transition-all duration-300 inline-block">
+                            <i class="fab fa-whatsapp mr-2"></i>
+                            Quero Começar Agora
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works -->
+    <section id="como-funciona" class="py-20 bg-gray-900 text-white relative">
+        <div class="bolinhas-decorativas bolinhas-brancas top-0 right-0"></div>
+        
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    Como a <span class="socialogica-green">Socialógica</span> transforma seu negócio
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    5 anos de experiência, especialistas em brasileiros que querem crescer nos EUA
+                </p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                <div class="text-center">
+                    <div class="bg-socialogica-green text-black w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                        1
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Análise Completa</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Auditamos sua presença digital atual e identificamos oportunidades na sua região e nicho.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-socialogica-green text-black w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                        2
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Otimização Estratégica</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Configuramos seu Google My Business com foco na comunidade brasileira local e palavras-chave relevantes.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-socialogica-green text-black w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                        3
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Conteúdo Regular</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Criamos posts, atualizações e respondemos avaliações para manter seu perfil sempre ativo e atrativo.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-socialogica-green text-black w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                        4
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Resultados Mensuráveis</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Monitoramos visualizações, ligações, direções e conversões, apresentando relatórios detalhados mensalmente.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-gray-50 relative">
+        <div class="bolinhas-decorativas bolinhas-verdes bottom-0 left-0"></div>
+        
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+                    Brasileiros que já cresceram conosco
+                </h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white p-8 rounded-lg shadow-lg card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">
+                        "Em 2 meses, meu restaurante em Miami triplicou o movimento. Agora apareço em primeiro quando pesquisam 'comida brasileira' na região."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="bg-socialogica-green rounded-full w-12 h-12 flex items-center justify-center text-white font-bold mr-4">
+                            RS
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-800">Roberto Silva</p>
+                            <p class="text-sm text-gray-600">Restaurante Sabor Brasil - Miami, FL</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">
+                        "Meu salão em Newark estava vazio. Hoje tenho fila de espera e 80% dos clientes vêm pelo Google. Melhor investimento que já fiz!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="bg-socialogica-green rounded-full w-12 h-12 flex items-center justify-center text-white font-bold mr-4">
+                            MC
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-800">Maria Costa</p>
+                            <p class="text-sm text-gray-600">Salão Beleza Brasileira - Newark, NJ</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">
+                        "Pet shop em Orlando estava sem movimento. Agora recebo 15-20 novos clientes brasileiros por semana através do Google Maps."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="bg-socialogica-green rounded-full w-12 h-12 flex items-center justify-center text-white font-bold mr-4">
+                            AS
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-800">André Santos</p>
+                            <p class="text-sm text-gray-600">Pet Shop Brazil - Orlando, FL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-socialogica-green text-black">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">500+</div>
+                    <p class="text-lg font-medium">Negócios Brasileiros Atendidos</p>
+                </div>
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">300%</div>
+                    <p class="text-lg font-medium">Aumento Médio em Visibilidade</p>
+                </div>
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">5</div>
+                    <p class="text-lg font-medium">Anos de Experiência</p>
+                </div>
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">4</div>
+                    <p class="text-lg font-medium">Estados Atendidos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gray-900 text-white relative">
+        <div class="bolinhas-decorativas bolinhas-brancas top-10 right-10"></div>
+        <div class="bolinhas-decorativas bolinhas-cinzas bottom-10 left-10"></div>
+        
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">
+                Então, o que nós podemos <span class="socialogica-green">espalhar</span> hoje?
+            </h2>
+            
+            <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
+                Não deixe que seu negócio continue invisível para a comunidade brasileira. 
+                <strong class="socialogica-green">Cada dia sem Google My Business é dinheiro perdido.</strong>
+            </p>
+            
+            <div class="mb-12">
+                <div class="bg-gray-800 p-8 rounded-2xl max-w-2xl mx-auto">
+                    <h3 class="text-2xl font-bold mb-4 socialogica-green">Oferta Especial - Primeiros 30 Dias</h3>
+                    <div class="text-4xl font-bold mb-2">
+                        <span class="line-through text-gray-500">$497</span>
+                        <span class="socialogica-green ml-4">$297</span>
+                    </div>
+                    <p class="text-gray-300 mb-6">Setup completo + gestão do primeiro mês</p>
+                    <div class="text-sm text-gray-400">
+                        <p><i class="fas fa-clock mr-2"></i>Oferta válida por tempo limitado</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center mb-8">
+                <a href="https://wa.me/5521999999999?text=Quero%20aproveitar%20a%20oferta%20especial%20do%20Google%20My%20Business%20por%20%24297" 
+                   class="bg-socialogica-green text-black px-10 py-5 rounded-full font-bold text-xl hover:bg-yellow-400 transition-all duration-300 pulse-animation">
+                    <i class="fab fa-whatsapp mr-3"></i>
+                    Quero Aproveitar Esta Oferta
+                </a>
+            </div>
+            
+            <div class="text-sm text-gray-400 space-y-2">
+                <p><i class="fas fa-shield-alt mr-2"></i>Garantia de 30 dias ou seu dinheiro de volta</p>
+                <p><i class="fas fa-headset mr-2"></i>Suporte em português durante todo o processo</p>
+                <p><i class="fas fa-chart-line mr-2"></i>Relatórios semanais dos primeiros resultados</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-8">
+                <img src="Logo-Socialogica.png" alt="Socialógica" class="mx-auto h-12 mb-4 opacity-80">
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Somos um hub de talentos especializado em fazer brasileiros crescerem nos Estados Unidos. 
+                    5 anos conectando negócios ao sucesso digital.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h4 class="font-semibold mb-3 socialogica-green">Estados Atendidos</h4>
+                    <div class="space-y-1 text-gray-400">
+                        <p>Flórida</p>
+                        <p>New Jersey</p>
+                        <p>New York</p>
+                        <p>Texas</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-3 socialogica-green">Negócios Atendidos</h4>
+                    <div class="space-y-1 text-gray-400">
+                        <p>Restaurantes</p>
+                        <p>Salões de Beleza</p>
+                        <p>Pet Shops</p>
+                        <p>Academias</p>
+                        <p>Serviços Gerais</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-3 socialogica-green">Contato</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p><i class="fas fa-globe mr-2"></i>socialogica.com.br</p>
+                        <p><i class="fab fa-whatsapp mr-2"></i>WhatsApp Direto</p>
+                        <p><i class="fas fa-envelope mr-2"></i>Suporte em Português</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-gray-400">
+                <p>&copy; 2024 Socialógica. Transformando brasileiros em referência nos EUA há 5 anos.</p>
+            </div>
+        </footer>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll effect to decorative elements
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelectorAll('.bolinhas-decorativas');
+            
+            parallax.forEach(element => {
+                const speed = 0.5;
+                element.style.transform = `translateY(${scrolled * speed}px)`;
+            });
+        });
+    </script>
+</body>
+</html>
