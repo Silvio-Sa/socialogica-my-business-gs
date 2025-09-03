@@ -101,18 +101,23 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+        
+        .team-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+        }
     </style>
 </head>
 <body class="bg-white">
-    <!-- Floating WhatsApp -->
     <a href="https://wa.me/5521975305821?text=Olá! Gostaria de saber mais sobre os serviços de Google My Business para brasileiros nos EUA" 
        class="floating-whatsapp" target="_blank">
         <img src="ZAP-SOCIALOGICA.png" alt="WhatsApp Socialógica" class="w-full h-full object-contain">
     </a>
 
-    <!-- Hero Section -->
     <section class="hero-section min-h-screen flex items-center justify-center px-4 py-20">
-        <!-- Decorative Elements -->
         <div class="bolinhas-decorativas bolinhas-brancas top-10 left-10"></div>
         <div class="bolinhas-decorativas bolinhas-verdes top-40 right-20"></div>
         <div class="bolinhas-decorativas bolinhas-cinzas bottom-20 left-1/4"></div>
@@ -148,7 +153,6 @@
         </div>
     </section>
 
-    <!-- Problem Section -->
     <section class="py-20 bg-gray-50 relative">
         <div class="bolinhas-decorativas bolinhas-cinzas top-0 right-0"></div>
         
@@ -188,7 +192,6 @@
         </div>
     </section>
 
-    <!-- Solution Section -->
     <section id="solucao" class="py-20 bg-white relative">
         <div class="bolinhas-decorativas bolinhas-verdes top-10 left-10"></div>
         <div class="bolinhas-decorativas bolinhas-brancas bottom-10 right-10"></div>
@@ -288,7 +291,6 @@
         </div>
     </section>
 
-    <!-- How it Works -->
     <section id="como-funciona" class="py-20 bg-gray-900 text-white relative">
         <div class="bolinhas-decorativas bolinhas-brancas top-0 right-0"></div>
         
@@ -347,7 +349,6 @@
         </div>
     </section>
 
-    <!-- Testimonials -->
     <section class="py-20 bg-gray-50 relative">
         <div class="bolinhas-decorativas bolinhas-verdes bottom-0 left-0"></div>
         
@@ -435,7 +436,6 @@
         </div>
     </section>
 
-    <!-- Stats Section -->
     <section class="py-20 bg-socialogica-green text-black">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-3 gap-8 text-center">
@@ -455,7 +455,49 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
+    <section class="py-20 bg-gray-900 text-white relative">
+        <div class="bolinhas-decorativas bolinhas-brancas top-10 left-10"></div>
+        <div class="bolinhas-decorativas bolinhas-verdes bottom-10 right-10"></div>
+        
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    Nossa <span class="socialogica-green">Equipe</span> de Especialistas
+                </h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg card-hover text-center">
+                    <img src="suzy-oliveira.jpg" alt="Foto do Profissional 1" class="team-image mx-auto mb-6">
+                    <h3 class="text-xl font-semibold mb-2">Nome do Profissional 1</h3>
+                    <p class="socialogica-green font-medium mb-4">Especialista em SEO Local</p>
+                    <p class="text-gray-400 leading-relaxed text-sm">
+                        Com mais de 10 anos de experiência, ele é o responsável por otimizar os perfis para que eles apareçam nas primeiras posições do Google Maps.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg card-hover text-center">
+                    <img src="rodrigo-ganem.jpg" alt="Foto do Profissional 2" class="team-image mx-auto mb-6">
+                    <h3 class="text-xl font-semibold mb-2">Nome do Profissional 2</h3>
+                    <p class="socialogica-green font-medium mb-4">Estratégia de Conteúdo</p>
+                    <p class="text-gray-400 leading-relaxed text-sm">
+                        Responsável por criar a voz e o conteúdo que engajam a comunidade, garantindo que a comunicação seja autêntica e eficaz.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg card-hover text-center">
+                    <img src="silvio-luis.jpg" alt="Foto do Profissional 3" class="team-image mx-auto mb-6">
+                    <h3 class="text-xl font-semibold mb-2">Nome do Profissional 3</h3>
+                    <p class="socialogica-green font-medium mb-4">Gestão de Projetos e Vendas</p>
+                    <p class="text-gray-400 leading-relaxed text-sm">
+                        É quem garante que todo o processo, desde o primeiro contato até a entrega dos resultados, seja suave e transparente para o cliente.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="py-20 bg-gray-900 text-white relative">
         <div class="bolinhas-decorativas bolinhas-brancas top-10 right-10"></div>
         <div class="bolinhas-decorativas bolinhas-cinzas bottom-10 left-10"></div>
@@ -470,7 +512,7 @@
                 <strong class="socialogica-green">Cada dia sem Google My Business é dinheiro perdido.</strong>
             </p>
             
-            <div class="mb-12">
+            <div class="mb-12" style="display: none;">
                 <div class="bg-gray-800 p-8 rounded-2xl max-w-2xl mx-auto">
                     <h3 class="text-2xl font-bold mb-4 socialogica-green">Oferta Especial - Primeiros 30 Dias</h3>
                     <div class="text-4xl font-bold mb-2">
@@ -499,7 +541,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-black text-white py-12">
         <div class="container mx-auto px-4 text-center">
             <div class="mb-8">
